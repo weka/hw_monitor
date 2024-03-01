@@ -1,0 +1,6 @@
+redfish>=3.2.2
+redfish_utilities>=3.2.3
+http_parser
+PyYAML>=6.0.1
+wekalib>=1.4.9
+wekapyutils
