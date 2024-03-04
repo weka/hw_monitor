@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+./build.sh
+set -x
+TOOL=hw_monitor
+VERSION=$(./tarball/$TOOL/$TOOL --version | awk '{print $3}')
+docker build --tag wekasolutions/${TOOL,,}:latest --tag wekasolutions/${TOOL,,}:$VERSION .
+#docker build --tag wekasolutions/export:$VERSION .
